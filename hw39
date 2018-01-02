@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class HW39 {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int a = scn.nextInt();
+        int b = scn.nextInt();
+        System.out.println(gcd(a,b));
+    }
+
+    public static int gcd(int a, int b) {
+        while(b != 0) {
+            int temp = a%b;
+            a = b;
+            b = temp;
+        }
+        return a;
+    }
+
+}
