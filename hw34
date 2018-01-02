@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class HW34 {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        String st1 = scn.nextLine();
+        String st2 = "";
+        for (int i = st1.length(); i > 0; i--) {
+            char ch = st1.charAt(i - 1);
+            st2 = st2 + ch;
+        }
+        if (st1.equals(st2)) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
+    }
+}
